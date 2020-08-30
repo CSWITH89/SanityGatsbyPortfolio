@@ -49,7 +49,6 @@ const IndexPage = ({ data }) => (
           </div>
           <footer class="sidebar-content-footer">
             <div class="sidebar-content-footer-icons">
-              <p>Icon Tray placeholder</p>
               <GrLinkedin 
               class="icon icon-linkedin"
               />

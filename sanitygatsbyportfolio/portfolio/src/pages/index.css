@@ -65,7 +65,7 @@ li.sidebar-content-navigation-list-item {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(143,191,224,0.6);
+    background-color: rgba(143,191,224,0.7);
 }
 .project-showcase-image-filter-2 {
     flex: 1;
@@ -76,7 +76,7 @@ li.sidebar-content-navigation-list-item {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(124,119,185,0.6);
+    background-color: rgba(124,119,185,0.7);
 
 }
 
@@ -89,7 +89,7 @@ li.sidebar-content-navigation-list-item {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(29,138,153,0.6);
+    background-color: rgba(29,138,153,0.7);
 }
 
 .project-showcase-image-filter-4 {
@@ -101,7 +101,7 @@ li.sidebar-content-navigation-list-item {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(11,201,205,0.6);
+    background-color: rgba(11,201,205,0.7);
 }
 
 .project-showcase-image-wrapper-1 {
@@ -144,4 +144,20 @@ li.sidebar-content-navigation-list-item {
     color: #fff;
     padding-left: 4rem;
     padding-bottom: 6rem;
+}
+
+.sidebar-content-footer {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.sidebar-content-footer-icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-left: 1.6rem;
 }
