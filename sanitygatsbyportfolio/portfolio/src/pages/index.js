@@ -41,23 +41,30 @@ const IndexPage = ({ data }) => (
           </div>
           <div class="sidebar-content-navigation">
             <ul class="sidebar-content-navigation-list">
-              <li class="sidebar-content-navigation-list-item">Option</li>
-              <li class="sidebar-content-navigation-list-item">Option</li>
-              <li class="sidebar-content-navigation-list-item">Option</li>
-              <li class="sidebar-content-navigation-list-item">Option</li>
+            <li class="sidebar-content-navigation-list-item nav-item">home</li>
+              <li class="sidebar-content-navigation-list-item nav-item">about</li>
+              <li class="sidebar-content-navigation-list-item nav-item">resume</li>
+              <li class="sidebar-content-navigation-list-item nav-item">blog</li>
+              <li class="sidebar-content-navigation-list-item nav-item">contact</li>
             </ul>
           </div>
           <footer class="sidebar-content-footer">
             <div class="sidebar-content-footer-icons">
+            <a href="https://www.linkedin.com/in/christopherwithall/" target="_blank" rel="noopener noreferrer">
               <GrLinkedin 
               class="icon icon-linkedin"
               />
+              </a>
+              <div class="disabled">
               <GrYoutube
               class="icon icon-youtube"
               />
+              </div>
+              <div class="disabled">
               <GrFacebook
               class="icon icon-facebook"
               />
+              </div>
             </div>
           </footer>
         </div>

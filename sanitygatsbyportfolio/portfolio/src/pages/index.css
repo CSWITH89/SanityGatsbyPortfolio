@@ -16,14 +16,13 @@
 .sidebar-content {
     display: flex;
     height: 100vh;
-    width: 100%;
     justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    margin: 2rem;
+    
 }
 
 .sidebar-content-header-text {
-    padding: 1rem;
     font-size: 3rem;
     font-family: 'Biryani', sans-serif;
     font-weight: 800;
@@ -32,10 +31,23 @@
 
 ul.sidebar-content-navigation-list {
     list-style-type: none;
+    margin-bottom: 14rem;
 } 
 
 li.sidebar-content-navigation-list-item {
-    font-size: 1.6rem;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+li.sidebar-content-navigation-list-item:hover {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: underline;
 }
 
 .project-showcase{
@@ -154,10 +166,15 @@ li.sidebar-content-navigation-list-item {
 .sidebar-content-footer-icons {
     display: flex;
     flex-direction: row;
-    margin-left: 1rem;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 .icon {
     font-size: 3rem;
-    margin-left: 1.6rem;
+}
+
+.disabled {
+    cursor: not-allowed;
 }
