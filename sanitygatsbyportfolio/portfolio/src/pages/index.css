@@ -1,8 +1,147 @@
 
 
 .main-page {
-    background-color: red;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+.sidebar-content {
     display: flex;
-    flex: 1;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-content-header-text {
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: 'Biryani', sans-serif;
+    font-weight: 800;
+}
+
+
+ul.sidebar-content-navigation-list {
+    list-style-type: none;
+} 
+
+li.sidebar-content-navigation-list-item {
+    font-size: 1.6rem;
+}
+
+.project-showcase{
+    grid-column: 2 / -1;
+}
+
+.project-showcase-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: lightblue;
     flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.project-showcase-image{
+    flex: 1;
+    position: relative;
+}
+
+.project-showcase-image-filter-1 {
+    flex: 1;
+    z-index: 2;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(143,191,224,0.6);
+}
+.project-showcase-image-filter-2 {
+    flex: 1;
+    z-index: 2;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(124,119,185,0.6);
+
+}
+
+.project-showcase-image-filter-3 {
+    flex: 1;
+    z-index: 2;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(29,138,153,0.6);
+}
+
+.project-showcase-image-filter-4 {
+    flex: 1;
+    z-index: 2;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(11,201,205,0.6);
+}
+
+.project-showcase-image-wrapper-1 {
+    flex: 1;
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.project-showcase-image-wrapper-2 {
+    flex: 1;
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.project-showcase-image-wrapper-3 {
+    flex: 1;
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.project-showcase-image-wrapper-4 {
+    flex: 1;
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.project-showcase-image-wrapper-text {
+    padding: 1rem;
+    font-size: 5rem;
+    font-family: 'Biryani', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    padding-left: 4rem;
+    padding-bottom: 6rem;
 }

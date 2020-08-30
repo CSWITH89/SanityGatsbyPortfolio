@@ -37,14 +37,14 @@ const IndexPage = ({ data }) => (
       <div class="sidebar">
         <div class="sidebar-content">
           <div class="sidebar-content-header">
-            <h1 class="sidebar-content-header-text">Placeholder Name</h1>
+            <h1 class="sidebar-content-header-text">CHRISTOPHER WITHALL</h1>
           </div>
           <div class="sidebar-content-navigation">
-            <ul>
-              <li>Option</li>
-              <li>Option</li>
-              <li>Option</li>
-              <li>Option</li>
+            <ul class="sidebar-content-navigation-list">
+              <li class="sidebar-content-navigation-list-item">Option</li>
+              <li class="sidebar-content-navigation-list-item">Option</li>
+              <li class="sidebar-content-navigation-list-item">Option</li>
+              <li class="sidebar-content-navigation-list-item">Option</li>
             </ul>
           </div>
           <footer class="sidebar-content-footer">
@@ -68,9 +68,16 @@ const IndexPage = ({ data }) => (
 <div class="project-showcase">
   <div class="project-showcase-content">
     {
-      data.allSanityProject.edges.map(({node: project}) => (
-        <div key={project.slug.current}>
-        <Img fluid={project.screenshotImage.asset.fluid} alt={project.title} />
+      data.allSanityProject.edges.map(({node: project}, i) => (
+        <div class="project-showcase-image" key={project.slug.current}>
+        <Img
+        style={{ height: '100vh' }}
+        imgStyle={{ objectFit: 'cover' }} 
+        fluid={project.screenshotImage.asset.fluid} alt={project.title} />
+        <div class={`project-showcase-image-filter-${i+1}`}></div>
+        <div class={`project-showcase-image-wrapper-${i+1}`}>
+        <h2 class="project-showcase-image-wrapper-text">{`${project.title}`}</h2>
+        </div>
         </div>
       ))
     }
