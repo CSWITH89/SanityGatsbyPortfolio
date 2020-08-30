@@ -1,4 +1,23 @@
+/* common styles  */
+* {
+  margin: 0;
+  padding: 0;
+  /* TO-DO: FONT FAMILY HERE  */
+}
+
+/* 16px = 1rem */
+
 html {
+  font-size: 62.5%;
+}
+
+main {
+  background-color: #fff;
+}
+
+/* end of common styles */
+
+/* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -619,4 +638,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} */

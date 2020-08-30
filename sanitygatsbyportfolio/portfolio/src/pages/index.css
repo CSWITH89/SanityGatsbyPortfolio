@@ -1,0 +1,8 @@
+
+
+.main-page {
+    background-color: red;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
